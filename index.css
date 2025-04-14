@@ -347,7 +347,7 @@
       background-color: aliceblue;
     }
     .carousel-item img{
-      height: 580px;
+      height: 600px;
     }
     @media (min-width: 0px) and (max-width: 991px) { /* Tablet styles */ 
 
