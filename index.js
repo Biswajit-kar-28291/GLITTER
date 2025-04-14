@@ -128,4 +128,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     typeWriter();
   }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const navbarCollapse = document.getElementById("navbarNav");
+
+    navLinks.forEach(function(link) {
+      link.addEventListener("click", function () {
+        // Check if the menu is open and screen is small
+        if (window.innerWidth <= 991 && navbarCollapse.classList.contains("show")) {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: true
+          });
+          bsCollapse.hide(); // Close the menu
+        }
+      });
+    });
+  });
    
