@@ -117,3 +117,10 @@ transition: all 0.3s ease-in-out;
   background-color:#d93030 !important;
   border: none !important;
 }
+
+@media (min-width: 0px) and (max-width: 991px) { /* Tablet styles */ 
+
+  .dis{
+    display: none;
+  }
+} 
