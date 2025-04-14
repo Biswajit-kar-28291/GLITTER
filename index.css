@@ -346,11 +346,15 @@
       padding:9px;
       background-color: aliceblue;
     }
-    @media (min-width: 0px) and (max-width: 1224px) { /* Tablet styles */ 
+  @media (min-width: 0px) and (max-width: 991px) { /* Tablet styles */ 
 
       .nav-links{
         gap: 10px;
       }
+      .carousel-item img{
+        height: 300px;
+      }
 } 
+ 
 
    
