@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const bookedDates = ["2025-04-17", "2025-04-20", "2025-04-25"]; 
+  const bookedDates = ["2025-04-17", "2025-04-20", "2025-04-25","2025-05-25","2025-05-20","2025-05-15","2025-05-5"]; 
 
   flatpickr("#calendar", {
     dateFormat: "Y-m-d",
