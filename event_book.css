@@ -1,19 +1,10 @@
 
-
-
-
-
-
-
-
-
-
-
-
-    /* body { background-color: #f8f9fa; } */
     .card { border-radius: 1rem; transition: transform 0.3s ease-in-out; }
-    .card:hover { transform: scale(1.01); }
-    .time-slot:hover { background-color: #e2e6ea; cursor: pointer; }
+    input:hover,textarea:hover,button:hover { 
+      transform: scale(1.03) !important; 
+      box-shadow: 0 0 15px rgb(201, 199, 199);
+      ; }
+    .time-slot:hover { transform: scale(1.03) ;background-color: #e2e6ea; cursor: pointer; }
     .active-slot { background-color: #0d6efd; color: white; }
     body{
         /* background: linear-gradient(135deg, #272727, #464657, #3f81e4); */
@@ -100,15 +91,25 @@
     }
 }
 
+
+.flatpickr-day.flatpickr-disabled {
+  background-color: #ffe3e3 !important; 
+  color: #f24e2d !important;            
+  border-radius: 50%;
+  cursor: block !important;
+  opacity: 1 !important;              
+  pointer-events: none;              
+}
+
 .custom-hover1{
   background-color: #ff760e;
   border: none;
 }
 .custom-hover1:hover {
-background-color: #ff903c;  /* Custom pink */
+background-color: #ff903c;  
 border-color: transparent;
 color: #ffff;
-transform: scale(1.05);
+transform: scale(1.09);
 box-shadow: 0 0 15px rgb(201, 199, 199);
 transition: all 0.3s ease-in-out;
 }
@@ -117,8 +118,7 @@ transition: all 0.3s ease-in-out;
   background-color:#d93030 !important;
   border: none !important;
 }
-
-@media (min-width: 0px) and (max-width: 991px) { /* Tablet styles */ 
+@media (min-width: 0px) and (max-width: 991px) { 
 
   .dis{
     display: none;
