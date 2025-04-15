@@ -73,7 +73,7 @@
     }
     .nav-links {
   display: flex;
-  gap: 50px; /* increase this to add more space */
+  gap: 50px; 
   align-items: center;
   list-style: none;
   position: relative;
@@ -150,12 +150,11 @@
   z-index: -1;
 }
 
-/* Optional: a dark overlay for better text visibility */
 .bg-hero-section::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
+  background: rgba(0, 0, 0, 0.4); 
   z-index: -1;
 }
 .btn{
@@ -164,7 +163,7 @@
     
 }
 .custom-hover:hover {
-  background-color: transparent;  /* Custom pink */
+  background-color: transparent;
   border-color: transparent;
   color: white;
   transform: scale(1.05);
@@ -175,7 +174,7 @@
     background-color: #ff760e;
 }
 .custom-hover1:hover {
-  background-color: #ff903c;
+  background-color: #d93030; 
   border-color: transparent;
   color: #ffff;
   transform: scale(1.05);
@@ -263,7 +262,6 @@
       display: block;
     }
 
-    /* Animation styles */
     .left, .right {
       opacity: 0;
     }
@@ -328,7 +326,7 @@
       text-align: center;
     }
 
-    /* Optional: fade in container */
+
     .section.hidden {
       opacity: 0;
       transition: opacity 0.5s ease-out;
@@ -347,9 +345,9 @@
       background-color: aliceblue;
     }
     .carousel-item img{
-      height: 600px;
+      height: 580px;
     }
-    @media (min-width: 0px) and (max-width: 991px) { /* Tablet styles */ 
+    @media (min-width: 0px) and (max-width: 991px) { 
 
       .nav-links{
         gap: 10px;
