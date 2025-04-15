@@ -162,6 +162,34 @@
     background-color: #ffc10e;
     
 }
+
+.section {
+  padding: 80px 20px;
+  /* background-color: #f8f8f8; */
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 3s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#welcome-section h1 {
+  color: #b33c86;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#welcome-section p {
+  color: rgb(56, 54, 54);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
 .custom-hover:hover {
   background-color: transparent;
   border-color: transparent;
