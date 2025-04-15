@@ -45,21 +45,21 @@ document.addEventListener("DOMContentLoaded", function () {
             button.classList.add('animate');
           }
         });
-      }, { threshold: 0.5 }); // 50% visible
+      }, { threshold: 0.5 }); 
   
       observer.observe(section);
   
       document.getElementById("consultBtn").addEventListener("click", function() {
-    window.location.href = "event_book.html"; // Replace with your target page URL
+    window.location.href = "event_book.html"; 
   });
       document.getElementById("consultBtn1").addEventListener("click", function() {
-    window.location.href = "event_book.html"; // Replace with your target page URL
+    window.location.href = "event_book.html"; 
   });
       document.getElementById("home").addEventListener("click", function() {
-    window.location.href = "#mainSlider"; // Replace with your target page URL
+    window.location.href = "#mainSlider"; 
   });
       document.getElementById("book_an_event").addEventListener("click", function() {
-    window.location.href = "#connect"; // Replace with your target page URL
+    window.location.href = "#connect"; 
   });
       document.getElementById("about").addEventListener("click", function() {
     window.location.href = "#aboutus";
@@ -72,12 +72,12 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("pageLoader").classList.add("active");
     }
   
-    // Hide the loader
+   
     function hideLoader() {
       document.getElementById("pageLoader").classList.remove("active");
     }
   
-    // Example: show loader for 2 seconds on page load
+ 
     window.addEventListener("load", () => {
       showLoader();
       setTimeout(hideLoader, 2000);
@@ -103,15 +103,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const se = entry.target;
         se.classList.add('visible');
         startTyping();
-        observ.unobserve(se); // Corrected observer name here
+        observ.unobserve(se); 
       }
     });
   }, { threshold: 0.3 });
   
   const se = document.getElementById('welcome-section');
-  observ.observe(se); // Corrected to use 'observ'
+  observ.observe(se); 
   
-  const text = `Welcome to REETIREEVAJ, your premier wedding planning destination in Mumbai! At REETIREEVAJ, we are passionate about creating unforgettable moments that celebrate love and commitment. With our meticulous attention to detail and creative flair, we specialize in crafting bespoke weddings that reflect your unique style and vision.
+  const text = `Welcome to REETIREEVAJ, your premier wedding planning destination in Kolkata! At REETIREEVAJ, we are passionate about creating unforgettable moments that celebrate love and commitment. With our meticulous attention to detail and creative flair, we specialize in crafting bespoke weddings that reflect your unique style and vision.
   
   From the vibrant streets of Mumbai to the serene beaches of Goa, we pride ourselves on transforming every wedding into a magical experience. Whether you dream of an opulent affair in a luxurious hotel ballroom or an intimate celebration under the stars, our dedicated team of planners will bring your vision to life with seamless execution and unparalleled elegance.`;
   
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (index < text.length) {
         container.innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeWriter, 8); // Fast typing speed
+        setTimeout(typeWriter, 8); 
       }
     }
     typeWriter();
@@ -134,12 +134,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navLinks.forEach(function(link) {
       link.addEventListener("click", function () {
-        // Check if the menu is open and screen is small
         if (window.innerWidth <= 991 && navbarCollapse.classList.contains("show")) {
           const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
             toggle: true
           });
-          bsCollapse.hide(); // Close the menu
+          bsCollapse.hide(); 
         }
       });
     });
