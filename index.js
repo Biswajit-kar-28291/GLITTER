@@ -108,26 +108,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, { threshold: 0.3 });
   
-  const se = document.getElementById('welcome-section');
-  observ.observe(se); 
   
-  const text = `Welcome to REETIREEVAJ, your premier wedding planning destination in Kolkata! At REETIREEVAJ, we are passionate about creating unforgettable moments that celebrate love and commitment. With our meticulous attention to detail and creative flair, we specialize in crafting bespoke weddings that reflect your unique style and vision.
-  
-  From the vibrant streets of Mumbai to the serene beaches of Goa, we pride ourselves on transforming every wedding into a magical experience. Whether you dream of an opulent affair in a luxurious hotel ballroom or an intimate celebration under the stars, our dedicated team of planners will bring your vision to life with seamless execution and unparalleled elegance.`;
-  
-  const container = document.getElementById('typewriter');
-  let index = 0;
-  
-  function startTyping() {
-    function typeWriter() {
-      if (index < text.length) {
-        container.innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeWriter, 8); 
-      }
+
+
+  function revealOnScroll() {
+    const section = document.getElementById("welcome-section");
+    const windowHeight = window.innerHeight;
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (sectionTop < windowHeight - 100) {
+      section.classList.add("visible");
     }
-    typeWriter();
   }
+
+  // Trigger on scroll
+  window.addEventListener("scroll", revealOnScroll);
+  // Also run it once in case the section is already visible
+  revealOnScroll();
+
+  window.addEventListener("scroll", function () {
+    const section = document.getElementById("welcome-section");
+    const sectionTop = section.getBoundingClientRect().top;
+  
+    if (sectionTop < window.innerHeight) {
+      section.classList.add("active");
+    }
+  });
+
+
+
   document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
     const navbarCollapse = document.getElementById("navbarNav");
